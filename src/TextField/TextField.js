@@ -84,6 +84,7 @@ const TextField = props => {
       onFocus={props.onFocus}
       placeholder={props.placeHolder}
       required={props.required}
+      step={props.step}
       style={computedInputStyle}
       type={props.type}
       value={props.value}
@@ -142,6 +143,7 @@ TextField.propTypes = {
   placeHolder: string,
   required: bool,
   rows: number,
+  step: number,
   style: object,
   type: string,
   value: oneOfType([string, number]),
