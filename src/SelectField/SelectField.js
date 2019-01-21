@@ -59,6 +59,7 @@ const SelectField = props => {
     <div style={computedContainerStyle}>
       {props.label && <label style={computedLabelStyle}>{props.label}</label>}
       <select
+        id={props.id}
         className={props.className}
         disabled={props.disabled}
         onBlur={props.onBlur}
@@ -98,7 +99,8 @@ SelectField.propTypes = {
     PropTypes.number,
     PropTypes.bool
   ]),
-  warning: PropTypes.bool
+  warning: PropTypes.bool,
+  id: PropTypes.string
 }
 
 export default SelectField
